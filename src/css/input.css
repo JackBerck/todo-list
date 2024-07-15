@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-group-item {
+  @apply flex items-center justify-between py-2 px-4 bg-slate-900 text-slate-200 rounded-lg mb-2;
+}
+
+.todo-content {
+  @apply flex items-center gap-2;
+}
+
+.todo-check {
+  @apply w-4 h-4 accent-green-600;
+}
+
+.todo-text {
+  @apply text-sm md:text-base;
+}
+
+.list-actions {
+  @apply flex gap-1 md:gap-4;
+}
+
+.svg-icon {
+  @apply w-4 h-4 md:w-5 md:h-5;
+}
+
+.edit-button {
+  @apply bg-slate-200 text-slate-900 border border-slate-200 rounded-lg p-1 hover:bg-slate-900 hover:text-slate-200 transition duration-200;
+}
+
+.change-todo {
+  @apply bg-gray-900 text-white outline-none w-full placeholder:text-sm md:placeholder:text-base;
+}
+
+.delete-button {
+  @apply bg-red-600 text-slate-200 rounded-lg p-1 hover:bg-slate-200 hover:text-red-600 transition duration-200;
+}
